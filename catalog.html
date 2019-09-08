@@ -56,11 +56,64 @@
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
         </ul>
-        <h1>ПЕРФОРАТОРЫ</h1>
+        <h2>ПЕРФОРАТОРЫ</h2>
         <section>
-          <h2>ФИЛЬТР:</h2>
+          <div>
+            <p>ФИЛЬТР:</p>
+          </div>
+          <div>
+            <p>СОРТИРОВКА:</p>
+            <p>ПО ЦЕНЕ</p>
+            <p>ПО ТИПУ</p>
+            <p>ПО ФУНКЦИОНАЛУ</p>
+            <span></span>
+            <span></span>
+          </div>
         </section>
         <section>
+          <form action="/" method="post">
+            <div>
+              <label for="price">ЦЕНА:</label>
+              <input type="range" id="price" name="price" min="0" max="30000">
+            </div>
+            <div>
+              <p>ПРОИЗВОДИТЕЛИ:</p>
+              <div>
+                <input type="checkbox" id="bosh" name="bosh" checked>
+                <label for="bosh">BOSCH</label>
+              </div>
+              <div>
+                <input type="checkbox" id="interskol" name="interskol">
+                <label for="interskol">ИНТЕРСКОЛ</label>
+              </div>
+              <div>
+                <input type="checkbox" id="makita" name="makita" checked>
+                <label for="makita">MAKITA</label>
+              </div>
+              <div>
+                <input type="checkbox" id="dewalt" name="dewalt">
+                <label for="dewalt">Dewalt</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hitachi" name="hitachi">
+                <label for="hitachi">Hitachi</label>
+              </div>
+            </div>
+            <div>
+              <p>ПИТАНИЕ:</p>
+              <div>
+                <input type="radio" id="akkumulyator" name="akkumulyator" checked>
+                <label for="akkumulyator">Аккумуляторные</label>
+              </div>
+              <div>
+                <input type="radio" id="setevyye" name="setevyye">
+                <label for="setevyye">Сетевые</label>
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="ПОКАЗАТЬ">
+            </div>
+          </form>
           <ul>
             <!-- product 1 -->
             <li>
@@ -159,8 +212,25 @@
               <p><a href="#">12500 Р.</a></p>
             </li>
           </ul>
+          <ul>
+            <li><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+          </ul>
         </section>
       </div>
+      <aside>
+        <div class="container">
+          <h2>ПАРА СЛОВ О ПЕРФОРАТ</h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и
+            отбойного молотка.<br>
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+      </div>
+      </aside>      
     </main>
     <footer>
       <div class="container">
@@ -189,12 +259,5 @@
         </div>
       </div>
     </footer>
-    <section>
-      <p>Товар добавлен в корзину!</p>
-      <!-- Здесь будет форма -->
-      <button type="button">Закрыть</button>
-      <button type="button">ОФОРМИТЬ ЗАКАЗ</button>
-      <button type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-    </section>
   </body>
 </html>
