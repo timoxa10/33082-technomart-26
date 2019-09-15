@@ -9,11 +9,13 @@
       <div class="container">
         <div>
           <ul>
-            <li><a href="index.html"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a></li>
             <li>
-              <form action="/" method="post">
-              	<input type="search" name="" placeholder="Поиск:" >
-              	<input type="submit" name="" value="" >
+              <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            </li>
+            <li>
+              <form action="https://echo.htmlacademy.ru" method="post">
+              	<input type="search" name="search" placeholder="Поиск:" >
+              	<button type="submit"></button>
               </form>
             </li>
             <li>Закладки: 0</li>
@@ -51,7 +53,7 @@
     <main>
       <div class="container">
         <ul>
-          <li><a href="index.html"><img src="img/svg/icon-home.svg" alt="На главную"></a></li>
+          <li><a href="index.html" aria-label="Перейти на главную"><img src="img/svg/icon-home.svg" alt="На главную"></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="#">Перфораторы</a></li>
@@ -66,53 +68,55 @@
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По функционалу</a>
-            <a href="#"><img src="img/svg/icon-up-dir.svg" alt="cортировка"></a>
-            <a href="#"><img src="img/svg/icon-down-dir.svg" alt="cортировка"></a>
+            <a href="#" aria-label="Cортировка по возрастанию"><img src="img/svg/icon-up-dir.svg" alt="Cортировка"></a>
+            <a href="#" aria-label="Cортировка по убыванию"><img src="img/svg/icon-down-dir.svg" alt="Cортировка"></a>
           </div>
         </section>
         <section>
-          <form action="/" method="post">
-            <div>
-              <label for="price">ЦЕНА:</label>
-              <input type="range" id="price" name="price" min="0" max="30000">
-            </div>
-            <div>
-              <p>Производители:</p>
-              <div>
-                <input type="checkbox" id="bosh" name="bosh" checked>
-                <label for="bosh">Bosch</label>
-              </div>
-              <div>
-                <input type="checkbox" id="interskol" name="interskol">
-                <label for="interskol">Интерскол</label>
-              </div>
-              <div>
-                <input type="checkbox" id="makita" name="makita" checked>
-                <label for="makita">Makita</label>
-              </div>
-              <div>
-                <input type="checkbox" id="dewalt" name="dewalt">
-                <label for="dewalt">Dewalt</label>
-              </div>
-              <div>
-                <input type="checkbox" id="hitachi" name="hitachi">
-                <label for="hitachi">Hitachi</label>
-              </div>
-            </div>
-            <div>
-              <p>Питание:</p>
-              <div>
-                <input type="radio" id="akkumulyator" name="akkumulyator" checked>
-                <label for="akkumulyator">Аккумуляторные</label>
-              </div>
-              <div>
-                <input type="radio" id="setevyye" name="setevyye">
-                <label for="setevyye">Сетевые</label>
-              </div>
-            </div>
-            <div>
-              <input type="submit" value="Показать">
-            </div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <legend>Цена:</legend>
+            </fieldset>
+            <!-- price range starts here -->
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="filter-bosch">Bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskol" id="filter-interskol">
+                  <label for="filter-interskol">Интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="filter-makita" checked>
+                  <label for="filter-makita">Makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="filter-dewalt">
+                  <label for="filter-dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="filter-hitachi">
+                  <label for="filter-hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="akkumulyatornyye" id="filter-akkumulyatornyye" checked>
+                  <label for="filter-akkumulyatornyye">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="setevyye" id="filter-setevyye">
+                  <label for="filter-setevyye">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Показать</button>
           </form>
           <ul>
             <!-- product 1 -->
@@ -237,7 +241,7 @@
       <div class="container">
         <section>
           <div>
-            <a href="index.html"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
             <ul>
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
@@ -271,9 +275,15 @@
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="img/svg/icon-vk.svg" alt="Лого Вконтакте">Вконтакте</a></li>
-              <li><a href="#"><img src="img/svg/icon-fb.svg" alt="Лого Фейсбук">Фейсбук</a></li>
-              <li><a href="#"><img src="img/svg/icon-insta.svg" alt="Лого Инстаграм">Инстаграм</a></li>
+              <li>
+                <a href="#" aria-label="Техномарт во Вконтакте"><img src="img/svg/icon-vk.svg" alt="Лого Вконтакте"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Техномарт в Фейсбуке"><img src="img/svg/icon-fb.svg" alt="Лого Фейсбук"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Техномарт в Инстаграме"><img src="img/svg/icon-insta.svg" alt="Лого Инстаграм"></a>
+              </li>
             </ul>
           </div>
           <div>
@@ -288,5 +298,14 @@
         </section>
       </div>
     </footer>
+    <!-- starts section our address -->
+    <section>
+      <p>Товар добавлен в корзину!</p>
+      <button type="button">Оформить заказ</button>
+      <button type="button">Продолжить покупки</button>
+      <button type="button" aria-label="Закрыть форму">x</button>
+    </section>
+    <!-- ends section our address -->
+    
   </body>
 </html>

@@ -5,16 +5,17 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <!-- start header -->
     <header>
       <div class="container">
         <div>
           <ul>
-            <li><a href="index.html"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a></li>
             <li>
-              <form action="/" method="post">
-              	<input type="search" name="" placeholder="Поиск:" >
-              	<input type="submit" name="" value="" >
+              <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            </li>
+            <li>
+              <form action="https://echo.htmlacademy.ru" method="post">
+              	<input type="search" name="search" placeholder="Поиск:" >
+              	<button type="submit"></button>
               </form>
             </li>
             <li>Закладки: 0</li>
@@ -52,10 +53,10 @@
         </nav>
       </div>
     </header>
-    <!-- end header -->
     <main>
       <div class="container">
         <section>
+          <h2 class="visually-hidden">Наши преимущества:</h2>
           <div>
             <h4>Материалы</h4>
             <a href="#">На любой вкус</a>
@@ -71,6 +72,7 @@
             <a href="#">Для стройки</a>
             <img src="img/svg/icon-3.svg" alt="Техника">
           </div>
+          <!-- start slider -->
           <div>
             <div>
               <img src="img/slider-item-02.png" width="620" height="266" alt="Слайдер дрели">
@@ -84,7 +86,10 @@
               <p>Настоящие мужские игрушки</p>
               <a href="catalog.html">Открыть каталог</a>
             </div>
+            <button type="button">Назад</button>
+            <button type="button">Вперед</button>
           </div>
+          <!-- end slider -->
           <div>
             <h4>Скидки 50%</h4>
             <a href="#">На 350 товаров</a>
@@ -151,7 +156,7 @@
       <div class="container">
         <section>
           <div>
-            <h3>Компания «Техномарт»</h3>
+            <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
             <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
@@ -162,7 +167,7 @@
               <li>Кредит</li>
             </ul>
             <div>
-              <h2>Доставка</h2>
+              <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
@@ -172,7 +177,7 @@
               <img src="img/our-services-01-delivery.png" width="468" height="261" alt="Сервисы доставка">
             </div>
             <div>
-              <h2>Гарантия</h2>
+              <h3>Гарантия</h3>
               <p>
                 Если купленный у нас товар поломается или заискрит,<br>
                  а также в случае пожара, спровоцированного его<br>
@@ -184,7 +189,7 @@
               <img src="img/our-services-02-guarantee.png" width="389" height="283" alt="Сервисы гарантия">
             </div>
             <div>
-              <h2>Кредит</h2>
+              <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще!<br>
                  Кредитные консультанты придут вам на помощь.
@@ -222,7 +227,7 @@
       <div class="container">
         <section>
           <div>
-            <a href="index.html"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+            <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
             <ul>
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
@@ -256,9 +261,15 @@
           </div>
           <div>
             <ul>
-              <li><a href="#"><img src="img/svg/icon-vk.svg" alt="Лого Вконтакте">Вконтакте</a></li>
-              <li><a href="#"><img src="img/svg/icon-fb.svg" alt="Лого Фейсбук">Фейсбук</a></li>
-              <li><a href="#"><img src="img/svg/icon-insta.svg" alt="Лого Инстаграм">Инстаграм</a></li>
+              <li>
+                <a href="#" aria-label="Техномарт во Вконтакте"><img src="img/svg/icon-vk.svg" alt="Лого Вконтакте"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Техномарт в Фейсбуке"><img src="img/svg/icon-fb.svg" alt="Лого Фейсбук"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Техномарт в Инстаграме"><img src="img/svg/icon-insta.svg" alt="Лого Инстаграм"></a>
+              </li>
             </ul>
           </div>
           <div>
@@ -273,5 +284,35 @@
         </section>
       </div>
     </footer>
+    <!-- starts form write us -->
+    <section>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="user-text">Текст письма:</label>
+          <input id="user-text" type="text" name="user-text" placeholder="В свободной форме">
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button" aria-label="Закрыть форму">x</button>
+    </section>
+    <!-- ends form write us -->
+
+    <!-- starts section our address -->
+    <section>
+      <p>
+        <img src="img/contacts-map-02-clicable.png" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button" aria-label="Закрыть форму">x</button>
+    </section>
+    <!-- ends section our address -->
+    
   </body>
 </html>
