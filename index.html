@@ -8,23 +8,21 @@
     <header>
       <div class="container">
         <div>
-          <ul>
-            <li>
-              <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
-            </li>
-            <li>
-              <form action="https://echo.htmlacademy.ru" method="post">
-              	<input type="search" name="search" placeholder="Поиск:" >
-              	<button type="submit"></button>
-              </form>
-            </li>
-            <li>Закладки: 0</li>
-            <li>Корзина: 0</li>
-            <li>
-              <a href="#">Оформить заказ</a>
-            </li>
-          </ul>
+          <a href="index.html" aria-label="Логотип Техномарт"><img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт"></a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+          	<input type="search" name="search" placeholder="Поиск:" >
+          	<button type="submit"></button>
+          </form>
         </div>
+        <ul>
+          <li>Закладки: 0</li>
+          <li>Корзина: 0</li>
+          <li>
+            <a href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
         <div>
           <ul>
             <li><p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p></li>
@@ -149,7 +147,7 @@
             <li><img src="img/manufacturers-05-hitachi.png" width="169" height="31" alt="Логотип hitachi"></li>
             <li><img src="img/manufacturers-06-lg.png" width="121" height="73" alt="Логотип lg"></li>
             <li><img src="img/manufacturers-07-aeg.png" width="151" height="96" alt="Логотип aeg"></li>
-            <li><img src="img/manufacturers-08-aeg.png" width="204" height="96" alt="Логотип metabo"></li>
+            <li><img src="img/manufacturers-08-aeg.png" width="204" height="69" alt="Логотип metabo"></li>
           </ul>
         </section>
       </div>
@@ -162,41 +160,52 @@
           </div>
           <div>
             <ul>
-              <li>Доставка</li>
-              <li>Гарантия</li>
-              <li>Кредит</li>
+              <li>
+                <input type="radio" id="tab-1" name="tab-group-1" checked>
+                <label for="tab-1">Доставка</label>
+              </li>
+              <li>
+                <input type="radio" id="tab-2" name="tab-group-1" checked>
+                <label for="tab-2">Гарантия</label>
+              </li>
+              <li>
+                <input type="radio" id="tab-2" name="tab-group-1" checked>
+                <label for="tab-2">Кредит</label>
+              </li>
             </ul>
-            <div>
-              <h3>Доставка</h3>
-              <p>
-                Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!
-              </p>
-              <img src="img/our-services-01-delivery.png" width="468" height="261" alt="Сервисы доставка">
-            </div>
-            <div>
-              <h3>Гарантия</h3>
-              <p>
-                Если купленный у нас товар поломается или заискрит,<br>
-                 а также в случае пожара, спровоцированного его<br>
-                возгоранием,  вы всегда можете быть уверены в<br>
-                нашей гарантии. Мы обменяем сгоревший товар на<br>
-                новый.<br>
-                Дом уж восстановите как-нибудь сами.
-              </p>
-              <img src="img/our-services-02-guarantee.png" width="389" height="283" alt="Сервисы гарантия">
-            </div>
-            <div>
-              <h3>Кредит</h3>
-              <p>
-                Залезть в долговую яму стало проще!<br>
-                 Кредитные консультанты придут вам на помощь.
-              </p>
-              <a href="#">Отправить заявку</a>
-              <img src="img/our-services-03-loan.png" width="465" height="285" alt="Сервисы кредит">
-            </div>
+            <ul>
+              <li>
+                <h3>Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!
+                </p>
+                <img src="img/our-services-01-delivery.png" width="468" height="261" alt="Сервисы доставка">
+              </li>
+              <li>
+                <h3>Гарантия</h3>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,<br>
+                   а также в случае пожара, спровоцированного его<br>
+                  возгоранием,  вы всегда можете быть уверены в<br>
+                  нашей гарантии. Мы обменяем сгоревший товар на<br>
+                  новый.<br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+                <img src="img/our-services-02-guarantee.png" width="389" height="283" alt="Сервисы гарантия">
+              </li>
+              <li>
+                <h3>Кредит</h3>
+                <p>
+                  Залезть в долговую яму стало проще!<br>
+                   Кредитные консультанты придут вам на помощь.
+                </p>
+                <a href="#">Отправить заявку</a>
+                <img src="img/our-services-03-loan.png" width="465" height="285" alt="Сервисы кредит">
+              </li>
+            </ul>
           </div>
         </section>
       </div>
@@ -313,6 +322,6 @@
       <button type="button" aria-label="Закрыть форму">x</button>
     </section>
     <!-- ends section our address -->
-    
+
   </body>
 </html>
