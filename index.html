@@ -10,59 +10,55 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="top-navigation-wrapper">
+      <div class="top-navigation-wrapper wrapper">
         <div class="container">
           <div class="top-navigation">
-            <div class="container">
-              <div class="search-navigation">
-                <a href="index.html" aria-label="Логотип Техномарт" class="navigation-logo">
-                  <img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт">
-                </a>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                	<input type="search" name="search" placeholder="Поиск:" >
-                	<button type="submit"></button>
-                </form>
-              </div>
-              <ul class="bookmarks-navigation">
-                <li>Закладки: 0</li>
-                <li>Корзина: 0</li>
-                <li>
-                  <a href="#">Оформить заказ</a>
-                </li>
-              </ul>
-            </div>
+            <a href="index.html" aria-label="Логотип Техномарт" class="navigation-logo">
+              <img src="img/svg/logo-technomart.svg" alt="Логотип Техномарт">
+            </a>
+            <form action="https://echo.htmlacademy.ru" method="post" class="search-form">
+            	<input type="search" name="search" placeholder="Поиск:" >
+            	<button type="submit" class="search-button"></button>
+            </form>
+            <ul class="bookmarks-navigation reset-list">
+              <li class="button-bookmark bookmarks-item">Закладки: 0</li>
+              <li class="button-cart bookmarks-item">Корзина: 0</li>
+              <li>
+                <a href="#" class="button-checkout bookmarks-item">Оформить заказ</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="user-navigation-wrapper">
+      <div class="user-navigation-wrapper wrapper">
         <div class="container">
           <div class="user-navigation">
             <div class="user-coordinates">
-              <ul class="store-description user-navigation-item">
-                <li><p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p></li>
-              </ul>
-              <ul class="store-phone user-navigation-item">
+              <div class="navigation-item">
+                <h1 class="first-level-heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+              </div>
+              <ul class="store-phone navigation-item reset-list">
                 <li><a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a></li>
                 <li><p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></li>
               </ul>
-              <ul class="user-login-buttons user-navigation-item">
-                <li class="user-login">
-                  <a href="#">Войти</a>
+              <ul class="user-buttons navigation-item reset-list">
+                <li>
+                  <a href="#" class="button-user-item button-login">Войти</a>
                 </li>
-                <li class="user-registry">
-                  <a href="#">Регистрация</a>
+                <li>
+                  <a href="#" class="button-user-item button-registry">Регистрация</a>
                 </li>
               </ul>
             </div>
             <nav class="user-menu">
-              <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="#">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
+              <ul class="reset-list">
+                <li><a href="index.html" class="user-menu-item">Главная</a></li>
+                <li><a href="#" class="user-menu-item">Компания</a></li>
+                <li><a href="catalog.html" class="user-menu-item">Каталог</a></li>
+                <li><a href="#" class="user-menu-item">Новости</a></li>
+                <li><a href="#" class="user-menu-item">Спецпредложения</a></li>
+                <li><a href="#" class="user-menu-item">Доставка</a></li>
+                <li><a href="#" class="user-menu-item">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -70,57 +66,56 @@
       </div>
     </header>
     <main>
-      <div class="section-navigation-wrapper">
+      <div class="content-navigation">
         <div class="container">
           <section class="our-advantages">
-                <h2 class="visually-hidden second-level-heading">Наши преимущества:</h2>
-                <div class="advantages-first-row">
-                  <div class="advantages-item advantages-materials">
-                    <h4>Материалы</h4>
-                    <a href="#">На любой вкус</a>
-                    <img src="img/svg/icon-1.svg" alt="Материалы">
-                  </div>
-                  <div class="advantages-item advantages-tool">
-                    <h4>Инструмент</h4>
-                    <a href="#">На все случаи</a>
-                    <img src="img/svg/icon-2.svg" alt="Инструмент">
-                  </div>
-                  <div class="advantages-item advantages-technics">
-                    <h4>Техника</h4>
-                    <a href="#">Для стройки</a>
-                    <img src="img/svg/icon-3.svg" alt="Техника">
-                  </div>
+            <h2 class="visually-hidden second-level-heading">Наши преимущества:</h2>
+            <div class="advantages-row">
+              <div class="advantages-item advantages-materials">
+                <h4 class="advantages-title">Материалы</h4>
+                <a href="#" class="button-advantages">На любой вкус</a>
+              </div>
+              <div class="advantages-item advantages-tool">
+                <h4 class="advantages-title">Инструмент</h4>
+                <a href="#" class="button-advantages">На все случаи</a>
+              </div>
+              <div class="advantages-item advantages-technics">
+                <h4 class="advantages-title">Техника</h4>
+                <a href="#" class="button-advantages">Для стройки</a>
+              </div>
+            </div>
+            <div class="advantages-row">
+              <div class="advantages-slider">
+                <div class="advantages-slider-item">
+                  <img src="img/slider-item-02.png" width="620" height="266" alt="Слайдер дрели">
+                  <!--
+                  <h4>Дрели</h4>
+                  <p>Соседям на радость!</p>
+                  <a href="catalog.html">Открыть каталог</a>
+                  -->
                 </div>
-                <div class="advantages-second-row">
-                  <div class="advantages-slider">
-                    <div class="advantages-slider-item">
-                      <img src="img/slider-item-02.png" width="620" height="266" alt="Слайдер дрели">
-                      <h4>Дрели</h4>
-                      <p>Соседям на радость!</p>
-                      <a href="catalog.html">Открыть каталог</a>
-                    </div>
-                    <div class="advantages-slider-item" style="display: none; ">
-                      <img src="img/slider-item-01.png" width="620" height="266" alt="Слайдер перфораторы">
-                      <h4>Перфораторы</h4>
-                      <p>Настоящие мужские игрушки</p>
-                      <a href="catalog.html">Открыть каталог</a>
-                    </div>
-                    <button type="button">Назад</button>
-                    <button type="button">Вперед</button>
-                  </div>
-                  <div class="advantages-services">
-                    <div class="advantages-item advantages-discounts">
-                      <h4>Скидки 50%</h4>
-                      <a href="#">На 350 товаров</a>
-                      <img src="img/svg/icon-4.svg" alt="Скидки">
-                    </div>
-                    <div class="advantages-item advantages-delivery">
-                      <h4>Доставка</h4>
-                      <a href="#">Бесплатно</a>
-                      <img src="img/svg/icon-5.svg" alt="Доставка">
-                    </div>
-                  </div>
+                <div class="advantages-slider-item" style="display: none; ">
+                  <img src="img/slider-item-01.png" width="620" height="266" alt="Слайдер перфораторы">
+                  <h4>Перфораторы</h4>
+                  <p>Настоящие мужские игрушки</p>
+                  <a href="catalog.html">Открыть каталог</a>
                 </div>
+                <!--
+                <button type="button">Назад</button>
+                <button type="button">Вперед</button>
+                -->
+              </div>
+              <div class="advantages-services">
+                <div class="advantages-item advantages-discounts">
+                  <h4 class="advantages-title">Скидки 50%</h4>
+                  <a href="#" class="button-advantages">На 350 товаров</a>
+                </div>
+                <div class="advantages-item advantages-delivery">
+                  <h4 class="advantages-title">Доставка</h4>
+                  <a href="#" class="button-advantages">Бесплатно</a>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="popular-item-section">
             <h2 class="second-level-heading">Популярные товары:</h2>
@@ -129,7 +124,7 @@
           <section class="popular-products-row">
             <ul class="product-list">
               <li class="product-item">
-                <p class="product-image"><img src="img/product-bosh-bfc-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 900"></p>
+                <img src="img/product-bosh-bfc-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 900">
                 <h3>Перфоратор BOSCH<br> BFG 900</h3>
                 <p class="crossed-price"><del>32500 Р.</del></p>
                 <p class="price"><a href="#">25500 Р.</a></p>
