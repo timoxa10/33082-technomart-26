@@ -30,9 +30,7 @@ p {
 }
 
 .second-level-heading {
-  padding: 0;
-  margin: 0;
-  font-size: 30px;
+  font-size: 28px;
   color: #000000;
   line-height: 30px;
   text-transform: uppercase;
@@ -345,7 +343,7 @@ p {
 }
 
 .our-advantages {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
 }
 
 .advantages-row {
@@ -367,7 +365,7 @@ p {
   width: 300px;
   padding-top: 20px;
   padding-left: 25px;
-  min-height: 123px;
+  min-height: 122px;
   margin-bottom: 20px;
 }
 
@@ -452,27 +450,38 @@ p {
   background-position: 85% 50%;
 }
 
-
-
 .popular-item-section {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
   background: #f9f5f0;
+  padding-top: 26px;
+  padding-right: 25px;
+  padding-bottom: 24px;
+  padding-left: 30px;
 }
 
-.popular-item-section a {
+.popular-item-section .second-level-heading {
+  padding: 0;
+  margin: 0;
+}
+
+.popular-item-section .button-popular {
+  display: inline-block;
   width: 250px;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
   background: #EE3643;
   font-size: 14px;
   color: #FFFFFF;
   text-align: center;
+  text-transform: uppercase;
   line-height: 18px;
 }
 
 .popular-products-row {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -482,55 +491,147 @@ p {
   flex-wrap: wrap;
 }
 
-.product-list p {
-  margin: 0;
-	padding: 0;
-}
-
 .product-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   width: 220px;
-  min-height: 318px;
-  border: 1px solid #eaeaea;
-  text-align: center;
-  font-family: PT Sans;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-}
-
-.product-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 164px;
-}
-
-.product-item h3 {
-  font-size: 18px;
-  color: #000000;
+  margin-bottom: 20px;
   line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
 }
 
-.product-item .crossed-price {
-  color: #A9A9A9;
+.product-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.product-item .flag-new {
+  width: 60px;
+  height: 59px;
+  background-image: url(../img/logo-new-product.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.product-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+
+.product-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 216px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.product-item .actions .buy,
+.product-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-item .actions .bookmark {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.product-item .actions {
+  display: none;
+}
+
+.product-item:hover .actions {
+  display: block;
+}
+
+.product-item .image {
+  width: 218px;
+  height: 168px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item .image img {
+  max-width: 100%;
+}
+
+.product-item .title {
+  font-size: 20px;
+  min-height: 40px;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 0px;
+}
+
+
+.product-item .discount {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #999;
+  text-decoration: line-through;
 }
 
 .product-item .price {
-  margin-right: auto;
-  margin-left: auto;
-  width: 140px;
+  position: relative;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 40px;
+  font-size: 19px;
+  color: white;
   background: #ee3643;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  border-radius: 3px;
 }
 
-.product-item .price a {
-  color: #FFFFFF;
+.product-item .price:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.product-item .title + .price {
+    margin-top: 40px;
 }
 
 .manufacturers-list {
