@@ -47,6 +47,12 @@ p {
   overflow: hidden;
 }
 
+.centered-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -339,7 +345,7 @@ p {
 
 .content-navigation {
   margin-top: 60px;
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 .our-advantages {
@@ -482,7 +488,6 @@ p {
 
 .popular-products-row {
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .product-list {
@@ -582,9 +587,6 @@ p {
 .product-item .image {
   width: 218px;
   height: 168px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .product-item .image img {
@@ -611,7 +613,7 @@ p {
 .product-item .price {
   position: relative;
   margin: 10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 10px 40px;
   font-size: 19px;
   color: white;
@@ -645,10 +647,6 @@ p {
 }
 
 .manufacturer-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 220px;
   min-height: 145px;
   border: 1px solid #eaeaea;
@@ -658,11 +656,15 @@ p {
 .services-navigation-wrapper {
   width: 100%;
   background-color: #f4f8f9;
-  padding-top: 65px;
+  padding-top: 40px;
   padding-bottom: 95px;
 }
 
-.our-services p {
+.our-services-intro .second-level-heading {
+  margin-bottom: 28px;
+}
+
+.our-services-intro p {
   margin: 0;
   padding: 0;
 }
