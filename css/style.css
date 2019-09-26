@@ -657,7 +657,7 @@ p {
   width: 100%;
   background-color: #f4f8f9;
   padding-top: 40px;
-  padding-bottom: 95px;
+  padding-bottom: 28px;
 }
 
 .our-services-intro .second-level-heading {
@@ -672,6 +672,7 @@ p {
 .our-services-tabs {
   display: flex;
   justify-content: space-between;
+  margin-top: 65px;
 }
 
 .our-services-tabs .tabs-menu {
@@ -682,19 +683,50 @@ p {
   width: 620px;
 }
 
-.tabs-menu label {
+.tab-menu-item [type="radio"] {
+    display: none;
+}
+
+.tab-menu-item label {
   font-size: 21px;
   color: #32425C;
   letter-spacing: 0;
   line-height: 30px;
 }
 
-.tabs-content h3 {
-  font-size: 36px;
+.tab-content-title {
+  font-size: 35px;
   color: #32425C;
   line-height: 36px;
-  margin: 0;
+  text-transform: uppercase;
   padding: 0;
+  margin: 0;
+}
+
+.tab-content-text {
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+.tab-delivery {
+  background-image: url(../img/our-services-01-delivery.png);
+  background-repeat: no-repeat;
+  background-position: 152px 30px;
+  height: 261px;
+}
+
+.tab-guarantee {
+  background-image: url(../img/our-services-02-guarantee.png);
+  background-repeat: no-repeat;
+  background-position: 152px 30px;
+  height: 283px;
+}
+
+.tab-credit {
+  background-image: url(../img/our-services-03-loan.png);
+  background-repeat: no-repeat;
+  background-position: 152px 30px;
+  height: 285px;
 }
 
 .company-info {
