@@ -657,7 +657,6 @@ p {
   width: 100%;
   background-color: #f4f8f9;
   padding-top: 40px;
-  padding-bottom: 28px;
 }
 
 .our-services-intro .second-level-heading {
@@ -673,6 +672,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 65px;
+  min-height: 290px;
 }
 
 .our-services-tabs .tabs-menu {
@@ -732,7 +732,7 @@ p {
 .company-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  margin-top: 55px;
   margin-bottom: 85px;
 }
 
@@ -746,19 +746,47 @@ p {
   min-height: 370px;
 }
 
-.company-info .button-item {
-  display: block;
+.company-info .button-company {
+  display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   line-height: 18px;
+  text-transform: uppercase;
   background-color: #ee3643;
 }
 
-.company-info .button-about {
+.company-about p {
+  margin-bottom: 25px;
+}
+
+.company-features  {
+  margin-bottom: 35px;
+}
+
+.company-features li {
+  position: relative;
+  font-size: 18px;
+  color: #000000;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+
+
+.company-map {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.button-about-company {
   width: 220px;
+}
+
+.button-write-us {
+  width: 300px;
 }
 
 .footer-navigation-wrapper {
