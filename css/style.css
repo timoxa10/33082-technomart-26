@@ -120,6 +120,10 @@ p {
   line-height: 18px;
 }
 
+.search-form input[type="search"]:focus {
+    background-color: white;
+}
+
 .bookmarks-navigation {
   display: flex;
   justify-content: space-between;
@@ -671,15 +675,18 @@ p {
   width: 620px;
 }
 
-.tab-menu-item [type="radio"] {
-    display: none;
-}
-
-.tab-menu-item label {
+.tabs-menu label {
+  display: block;
+  width: 100%;
   font-size: 21px;
-  color: #32425C;
-  letter-spacing: 0;
+  color: #ffffff;
   line-height: 30px;
+  padding-top: 13px;
+  padding-left: 22px;
+  padding-bottom: 17px;
+  background: #32425C;
+  box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
+  cursor: pointer;
 }
 
 .tab-content-title {
@@ -691,30 +698,60 @@ p {
   margin: 0;
 }
 
+.tab-button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
 .tab-content-text {
   margin-top: 28px;
   margin-bottom: 0;
 }
 
-.tab-delivery {
+.tab-content-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+
+.tab-content-item:nth-child(1) {
   background-image: url(../img/our-services-01-delivery.png);
   background-repeat: no-repeat;
   background-position: 152px 30px;
-  height: 261px;
 }
 
-.tab-guarantee {
+.tab-content-item:nth-child(2) {
   background-image: url(../img/our-services-02-guarantee.png);
   background-repeat: no-repeat;
   background-position: 152px 30px;
-  height: 283px;
 }
 
-.tab-credit {
+.tab-content-item:nth-child(3) {
   background-image: url(../img/our-services-03-loan.png);
   background-repeat: no-repeat;
   background-position: 152px 30px;
-  height: 285px;
+}
+
+.button-tab {
+    width: 195px;
+}
+
+#service-1:checked ~ .tabs-content .tab-content-item:nth-child(1) {
+  display: block;
+}
+
+#service-2:checked ~ .tabs-content .tab-content-item:nth-child(2) {
+  display: block;
+}
+
+#service-3:checked ~ .tabs-content .tab-content-item:nth-child(3) {
+  display: block;
 }
 
 .company-info {
@@ -734,7 +771,7 @@ p {
   min-height: 370px;
 }
 
-.company-info .button-company {
+.button-company {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;

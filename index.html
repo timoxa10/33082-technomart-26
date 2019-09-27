@@ -233,23 +233,21 @@
             <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
             <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </section>
+
           <section class="our-services-tabs">
+
+            <input class="visually-hidden" type="radio" id="service-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="service-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="service-3" name="toggle">
+
             <ul class="tabs-menu reset-list">
-              <li class="tab-menu-item">
-                <input type="radio" id="tab-1" name="tab-group-1" checked>
-                <label for="tab-1">Доставка</label>
-              </li>
-              <li class="tab-menu-item">
-                <input type="radio" id="tab-2" name="tab-group-1">
-                <label for="tab-2">Гарантия</label>
-              </li>
-              <li class="tab-menu-item">
-                <input type="radio" id="tab-3" name="tab-group-1">
-                <label for="tab-3">Кредит</label>
-              </li>
+              <li><label class="slider-service-item slider-service-item--1 active" for="service-1">Доставка</label></li>
+              <li><label class="slider-service-item slider-service-item--2" for="service-2">Гарантия</label></li>
+              <li><label class="slider-service-item slider-service-item--3" for="service-3">Кредит</label></li>
             </ul>
+
             <ul class="tabs-content reset-list">
-              <li class="tab-content-item tab-delivery">
+              <li class="tab-content-item">
                 <h3 class="tab-content-title">Доставка</h3>
                 <p class="tab-content-text">
                   Мы с удовольствием доставим ваш товар прямо<br>
@@ -258,7 +256,7 @@
                   поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="tab-content-item tab-guarantee" style="display: none; ">
+              <li class="tab-content-item">
                 <h3 class="tab-content-title">Гарантия</h3>
                 <p class="tab-content-text">
                   Если купленный у нас товар поломается или заискрит,<br>
@@ -269,15 +267,16 @@
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="tab-content-item tab-credit" style="display: none; ">
+              <li class="tab-content-item">
                 <h3 class="tab-content-title">Кредит</h3>
                 <p class="tab-content-text">
                   Залезть в долговую яму стало проще!<br>
                    Кредитные консультанты придут вам на помощь.
                 </p>
-                <a href="#">Отправить заявку</a>
+                <a href="#" class="button-tab button-company">Отправить заявку</a>
               </li>
             </ul>
+
           </section>
         </div>
       </div>
