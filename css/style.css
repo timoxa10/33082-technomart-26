@@ -663,8 +663,7 @@ p {
 .our-services-tabs {
   display: flex;
   justify-content: space-between;
-  margin-top: 65px;
-  min-height: 290px;
+  margin-top: 72px;
 }
 
 .our-services-tabs .tabs-menu {
@@ -678,12 +677,12 @@ p {
 .tabs-menu label {
   display: block;
   width: 100%;
-  font-size: 21px;
+  font-size: 22px;
   color: #ffffff;
   line-height: 30px;
   padding-top: 13px;
   padding-left: 22px;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
   background: #32425C;
   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
   cursor: pointer;
@@ -695,7 +694,8 @@ p {
   line-height: 36px;
   text-transform: uppercase;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .tab-button {
@@ -711,35 +711,36 @@ p {
 }
 
 .tab-content-text {
-  margin-top: 28px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .tab-content-item {
   display: none;
-  padding: 78px 0 80px 0;
+  height: 282px;
 }
 
 .tab-content-item:nth-child(1) {
   background-image: url(../img/our-services-01-delivery.png);
   background-repeat: no-repeat;
-  background-position: 152px 30px;
+  background-position: 151px 20px;
 }
 
 .tab-content-item:nth-child(2) {
   background-image: url(../img/our-services-02-guarantee.png);
   background-repeat: no-repeat;
-  background-position: 152px 30px;
+  background-position: 151px 20px;
 }
 
 .tab-content-item:nth-child(3) {
   background-image: url(../img/our-services-03-loan.png);
   background-repeat: no-repeat;
-  background-position: 152px 30px;
+  background-position: 151px 20px;
 }
 
 .button-tab {
-    width: 195px;
+  width: 195px;
+  margin-top: 30px;
 }
 
 #service-1:checked ~ .tabs-content .tab-content-item:nth-child(1) {
@@ -975,13 +976,15 @@ p {
   color: #ee3643;
 }
 
-.user-name a {
+/* CATALOG styles starts here */
+
+.user-name {
   font-size: 21px;
   color: #000000;
   line-height: 21px;
 }
 
-.user-personal-account a {
+.user-account a {
   font-size: 16px;
   color: #32425C;
   line-height: 18px;
