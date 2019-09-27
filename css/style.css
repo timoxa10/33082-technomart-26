@@ -777,6 +777,11 @@ p {
   width: 300px;
 }
 
+.main-footer {
+  font-family: Cuprum;
+}
+
+
 .footer-navigation-wrapper {
   background-color: #32425c;
   padding-bottom: 48px;
@@ -836,7 +841,6 @@ p {
 }
 
 .footer-phone, .footer-coordinates {
-  font-family: Cuprum;
   font-size: 18px;
   color: #F3F7F9;
 }
@@ -864,6 +868,7 @@ p {
 .footer-social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social p {
@@ -905,9 +910,9 @@ p {
   background-color: #ffffff;
 }
 
-.social-button:hover path,
-.social-button:focus path {
-  fill: #000000;
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
 }
 
 .footer-feedback {
@@ -922,6 +927,15 @@ p {
 
 .footer-feedback p:last-child {
   width: 115px;
+}
+
+.footer-feedback a:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 .user-name a {
