@@ -592,6 +592,7 @@ p {
   padding: 0;
   margin-top: 12px;
   margin-bottom: 0px;
+  text-transform: capitalize;
 }
 
 
@@ -990,8 +991,6 @@ p {
   color: #ee3643;
 }
 
-/* CATALOG styles starts here */
-
 .user-name {
   font-size: 21px;
   color: #000000;
@@ -1009,17 +1008,18 @@ p {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 42px;
+  margin-right: 40px;
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
+  text-transform: uppercase;
 }
 
 .breadcrumbs li:first-child a {
@@ -1035,8 +1035,8 @@ p {
 .breadcrumbs li::after {
   content: "";
   position: absolute;
-  top: 7px;
-  right: -25px;
+  top: 5px;
+  right: -22px;
   width: 8px;
   height: 12px;
   background-image: url(../img/svg/icon-right-small.svg);
@@ -1049,6 +1049,7 @@ p {
   font-size: 13px;
   color: #000000;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
 .breadcrumbs a:hover,
@@ -1060,12 +1061,16 @@ p {
   display: none;
 }
 
-.catalog-title-row {
-  width: 100%;
+.catalog-title-wrapper {
   background-color: #f2f6f8;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 28px;
+  padding-bottom: 30px;
   padding-left: 30px;
+}
+
+.catalog-title-wrapper .second-level-heading {
+  padding: 0;
+  margin: 0;
 }
 
 .filter-navigation {
@@ -1078,8 +1083,11 @@ p {
   justify-content: space-between;
 }
 
-.filter-row:first-child {
+
+
+.filter-sort-row {
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .filter-title-column, .filter-list {
@@ -1104,7 +1112,22 @@ p {
   width: 240px;
 }
 
-.filter-row, .sort-item {
+.filter-row h5 {
+  margin-left: 19px;
+  font-family: PT Sans;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.filter-sort-row .sort-item {
+  display: inline-block;
+  opacity: 0.3;
+  border-bottom: 1px dashed #EE3643;
+  margin-right: 68px;
   font-family: PT Sans;
   font-size: 13px;
   color: #000000;
@@ -1112,14 +1135,8 @@ p {
   text-transform: uppercase;
 }
 
-.filter-row  h5 {
-  margin-left: 18px;
-}
-
-.filter-sort-row .sort-item {
-  display: inline-block;
-  opacity: 0.3;
-  border-bottom: 1px dashed #EE3643;
+.filter-filters-items a:nth-child(3) {
+  margin-right: 45px;
 }
 
 .filter-sort-row .sort-item:hover {
@@ -1130,6 +1147,10 @@ p {
 .filter-sort-row .sort-item:active {
   color: #EE3643;
   border: none;
+}
+
+.filter-sort-row .sort-item-up {
+  margin-right: 20px;
 }
 
 .sort-item-up, .sort-item-down {
@@ -1154,39 +1175,36 @@ p {
 .filter-item legend {
   font-family: PT Sans;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 16px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .range-filter {
   width: 100%;
-  margin-top: 49px;
+  margin-top: 20px;
 }
 
 .range-controls {
   position: relative;
-
-  height: 41px;
-  margin-bottom: 15px;
-  padding-top: 39px;
+  height: 80px;
+  margin-bottom: 8px;
+  padding-top: 38px;
   padding-right: 20px;
   padding-left: 20px;
-
   background-color: #f1f1f1;
-
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 85%;
   height: 2px;
-
+  margin-left: 0;
   background: #00ca74;
 }
 
@@ -1194,12 +1212,10 @@ p {
   position: absolute;
   top: 31px;
   left: 0;
-
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   padding: 0;
-
-  border: 8px solid #ffffff;
+  border: 10px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
@@ -1207,11 +1223,11 @@ p {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1219,36 +1235,36 @@ p {
 }
 
 .price-controls label {
+  position: relative;
   display: inline-block;
-  width: 50%;
-
   font-size: 16px;
-  text-transform: uppercase;
 }
 
 .price-controls input {
-  width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
-
-
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   text-align: center;
   color: #283136;
-
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
 }
 
-.max-price {
-  text-align: right;
+.min-price::after {
+  content: "-";
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  width: 0px;
+  height: 0px;
+  color: #000;
 }
 
-
-
-
-
+.min-price {
+  margin-right: 15px;
+}
 
 .pagination {
   display: flex;

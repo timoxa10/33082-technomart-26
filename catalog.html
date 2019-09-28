@@ -74,7 +74,7 @@
           <li><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
-        <div class="catalog-title-row">
+        <div class="catalog-title-wrapper wrapper">
           <h2 class="second-level-heading">Перфораторы</h2>
         </div>
         <div class="filter-navigation">
@@ -82,11 +82,10 @@
             <div class="filter-title-column filter-sort-item">
               <h5>Фильтр:</h5>
             </div>
-            <div class="filter-sorting-column filter-sort-item">
+            <div class="filter-row filter-sorting-column">
               <div class="filter-title">
                 <h5>Сортировка:</h5>
               </div>
-
               <div class="filter-filters-items">
                 <a href="#" class="sort-item">По цене</a>
                 <a href="#" class="sort-item">По типу</a>
@@ -104,11 +103,11 @@
               </div>
             </div>
           </section>
+
           <section class="filter-row">
             <form action="https://echo.htmlacademy.ru" method="post" class="filter-list">
               <fieldset class="filter-item">
                 <legend>Цена:</legend>
-                <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
@@ -117,12 +116,10 @@
                     <div class="toggle toggle-max"></div>
                   </div>
                   <div class="price-controls">
-                    <label class="min-price">  <input name="min-price" type="text" value="0"></label>
-                    <label class="max-price"> &mdash; <input name="max-price" type="text" value="30000"></label>
+                    <label class="min-price"><input name="min-price" type="text" value="0" class="min-price"></label>
+                    <label class="max-price"><input name="max-price" type="text" value="30000" class="max-price"></label>
                   </div>
-                </div>
               </fieldset>
-
               <fieldset class="filter-item">
                 <legend>Производители:</legend>
                 <ul class="reset-list">
@@ -148,7 +145,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="filter-item">
                 <legend>Питание:</legend>
                 <ul class="reset-list">
@@ -164,8 +160,8 @@
               </fieldset>
               <button type="submit">Показать</button>
             </form>
+
             <ul class="filter-products product-list reset-list">
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -179,7 +175,6 @@
                 <div class="discount">25500 Р.</div>
                 <div class="price">15500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag">новинка</div>
                 <div class="actions">
@@ -193,7 +188,6 @@
                 <div class="discount">30500 Р.</div>
                 <div class="price">25500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -206,7 +200,6 @@
                 <h3 class="title">Перфоратор BOSCH<br> BFG 2000</h3>
                 <div class="price">12500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -220,7 +213,6 @@
                 <div class="discount">25500 Р.</div>
                 <div class="price">15500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag">новинка</div>
                 <div class="actions">
@@ -234,7 +226,6 @@
                 <div class="discount">30500 Р.</div>
                 <div class="price">25500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -247,7 +238,6 @@
                 <h3 class="title">Перфоратор BOSCH<br> BFG 2000</h3>
                 <div class="price">12500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -261,7 +251,6 @@
                 <div class="discount">25500 Р.</div>
                 <div class="price">15500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag">новинка</div>
                 <div class="actions">
@@ -275,7 +264,6 @@
                 <div class="discount">30500 Р.</div>
                 <div class="price">25500 Р.</div>
               </li>
-
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -288,16 +276,15 @@
                 <h3 class="title">Перфоратор BOSCH<br> BFG 2000</h3>
                 <div class="price">12500 Р.</div>
               </li>
-
             </ul>
           </section>
-          <ul class="pagination">
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Cледующая</a></li>
-          </ul>
-      </div>
+        </div>
+        <ul class="pagination">
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Cледующая</a></li>
+        </ul>
       </div>
       <div class="section-description-wrapper wrapper">
         <div class="container">
