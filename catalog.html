@@ -68,38 +68,64 @@
     </header>
     <main>
       <div class="container">
-        <ul class="bread-crumbs">
-          <li><a href="index.html" aria-label="Перейти на главную"><img src="img/svg/icon-home.svg" alt="На главную"></a></li>
+        <ul class="breadcrumbs reset-list">
+          <li><a href="index.html" aria-label="Перейти на главную"></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
+          <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
         <div class="catalog-title-row">
           <h2 class="second-level-heading">Перфораторы</h2>
         </div>
-        <div class="filter-navigation-wrapper">
-          <section class="filter-row">
-            <div class="filter-title-column">
-              <p>Фильтр:</p>
+        <div class="filter-navigation">
+          <section class="filter-row filter-sort-row">
+            <div class="filter-title-column filter-sort-item">
+              <h5>Фильтр:</h5>
             </div>
-            <div class="filter-sorting-column">
-              <a href="#">Сортировка:</a>
-              <a href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По функционалу</a>
-              <a href="#" aria-label="Cортировка по возрастанию"><img src="img/svg/icon-up-dir.svg" alt="Cортировка"></a>
-              <a href="#" aria-label="Cортировка по убыванию"><img src="img/svg/icon-down-dir.svg" alt="Cортировка"></a>
+            <div class="filter-sorting-column filter-sort-item">
+              <div class="filter-title">
+                <h5>Сортировка:</h5>
+              </div>
+
+              <div class="filter-filters-items">
+                <a href="#" class="sort-item">По цене</a>
+                <a href="#" class="sort-item">По типу</a>
+                <a href="#" class="sort-item">По функционалу</a>
+                <a href="#" class="sort-item-up" aria-label="Cортировка по возрастанию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+                <a href="#" class="sort-item-down" aria-label="Cортировка по убыванию">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </div>
             </div>
           </section>
           <section class="filter-row">
             <form action="https://echo.htmlacademy.ru" method="post" class="filter-list">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">  <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price"> &mdash; <input name="max-price" type="text" value="30000"></label>
+                  </div>
+                </div>
               </fieldset>
-              <!-- price range starts here -->
-              <fieldset>
+
+              <fieldset class="filter-item">
                 <legend>Производители:</legend>
-                <ul>
+                <ul class="reset-list">
                   <li>
                     <input type="checkbox" name="bosch" id="filter-bosch" checked>
                     <label for="filter-bosch">Bosch</label>
@@ -122,9 +148,10 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+
+              <fieldset class="filter-item">
                 <legend>Питание:</legend>
-                <ul>
+                <ul class="reset-list">
                   <li>
                     <input type="radio" name="akkumulyatornyye" id="filter-akkumulyatornyye" checked>
                     <label for="filter-akkumulyatornyye">Аккумуляторные</label>
@@ -220,7 +247,7 @@
                 <h3 class="title">Перфоратор BOSCH<br> BFG 2000</h3>
                 <div class="price">12500 Р.</div>
               </li>
-                
+
               <li class="product-item">
                 <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -272,7 +299,7 @@
           </ul>
       </div>
       </div>
-      <div class="section-description-wrapper">
+      <div class="section-description-wrapper wrapper">
         <div class="container">
           <aside>
             <h2 class="second-level-heading">Пара слов о перфораторах</h2>
