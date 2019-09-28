@@ -86,7 +86,7 @@ p {
 }
 
 .top-navigation .navigation-logo img {
-  width: 137px;
+  width: 110px;
 }
 
 .navigation-logo:hover {
@@ -510,7 +510,7 @@ p {
   align-items: center;
   position: relative;
   width: 220px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -1075,7 +1075,7 @@ p {
 
 .filter-navigation {
   margin-top: 20px;
-  margin-bottom: 55px;
+  margin-bottom: 33px;
 }
 
 .filter-row {
@@ -1173,6 +1173,7 @@ p {
 
 .filter-item legend {
   padding-top: 25px;
+  padding-bottom: 20px;
   font-family: PT Sans;
   font-size: 17px;
   line-height: 16px;
@@ -1182,6 +1183,14 @@ p {
 
 .filter-item:first-child legend {
   padding-top: 0;
+}
+
+.filter-item:nth-child(2) {
+  padding-bottom: 0px;
+}
+
+.filter-item:nth-child(3) {
+  border-bottom: none;
 }
 
 .range-filter {
@@ -1273,8 +1282,8 @@ p {
 }
 
 .filter-option {
-  margin-bottom: 19px;
-  padding-left: 45px;
+  margin-bottom: 20px;
+  padding-left: 35px;
 }
 
 .filter-option label {
@@ -1285,13 +1294,14 @@ p {
   font-family: PT Sans;
   font-size: 15px;
   color: #000000;
-  line-height: 19px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -36px;
   top: 0;
   width: 23px;
   height: 23px;
@@ -1304,7 +1314,7 @@ p {
   content: "";
   position: absolute;
   top: 0px;
-  left: -42px;
+  left: -36px;
   width: 27px;
   height: 23px;
   background-image: url(../img/svg/checkbox-on.svg);
@@ -1315,7 +1325,7 @@ p {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -36px;
   top: 0;
   width: 25px;
   height: 25px;
@@ -1328,7 +1338,7 @@ p {
   content: "";
   position: absolute;
   top: 0px;
-  left: -42px;
+  left: -36px;
   width: 25px;
   height: 25px;
   background-image: url(../img/svg/radio-on.svg);
@@ -1339,9 +1349,9 @@ p {
 .filter-button {
   width: 140px;
   display: inline-block;
-  margin-right: 16px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 35px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-family: PT Sans;
   font-size: 13px;
   text-align: center;
@@ -1358,26 +1368,46 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-left: 240px;
+  margin-bottom: 60px;
 }
 
-.pagination-item {
-  margin-right: 5px;
+.pagination-list .pagination-item  {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 15px;
+  margin-right: 8px;
+  font-family: PT Sans;
+  font-size: 13px;
+  color: #000000;
+  background-color: #ffffff;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.pagination-item:last-child {
+.pagination-item-current {
+  background-color: #ee3643 !important;
+  color: #ffffff !important;
+}
+
+.pagination-item-next {
+  width: 140px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.pagination-list li:last-child .pagination-item {
   margin-right: 0;
-}
-
-
-.pagination-item a {
-  display: block;
-  padding: 10px 19px; 
-  color: #ffffff;
-  background-color: #000000;
 }
 
 .section-description-wrapper {
   background-color: #f2f6f8;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+
+aside .second-level-heading {
+  font-size: 29px;
 }
