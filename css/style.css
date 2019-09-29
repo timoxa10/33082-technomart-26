@@ -102,44 +102,37 @@ p {
   width: 270px;
 }
 
-
 .search-form input[type="search"] {
   width: 100%;
   border: none;
   background: #293449;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 45px;
+  padding-left: 48px;
   font-size: 17px;
   color: #000000;
   line-height: 18px;
-}
-
-.search-form::before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 18px;
-  width: 17px;
-  height: 17px;
   background-image: url(../img/svg/icon-search.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 16px 12px;
 }
 
-
-.search-form  input[type="search"]::placeholder {
+.search-form input[type="search"]::placeholder {
   font-size: 17px;
   color: #FFFFFF;
   line-height: 18px;
 }
 
-.search-form input[type="search"]:focus {
-  background-color: #ffffff;
-}
-
 .search-form input[type="search"]:hover {
   background-color: #212a3a;
+}
+
+.search-form input[type="search"]:focus,
+.search-form input[type="search"]:active {
+  background-color: #ffffff;
+  background-image: url(../img/svg/icon-search-red.svg);
+  background-repeat: no-repeat;
+  background-position: 16px 12px;
 }
 
 .bookmarks-navigation {
@@ -167,7 +160,7 @@ p {
 }
 
 .button-bookmark, .button-cart {
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .button-bookmark::before {
@@ -238,7 +231,7 @@ p {
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 45px;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
 }
 
 .navigation-item {
@@ -289,7 +282,7 @@ p {
 .store-phone p {
   font-family: 'Cuprum';
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 0;
   margin-left: 10px;
 }
@@ -312,9 +305,9 @@ p {
 
 .user-buttons .button-login {
   position: relative;
-  width: 115px;
+  width: 120px;
   margin-left: 20px;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .user-buttons .button-registry {
@@ -328,20 +321,26 @@ p {
   left: 13px;
   width: 20px;
   height: 17px;
-  background-image: url(../img/svg/icon-login.svg);
+  background-image: url(../img/svg/icon-login-blue.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.3;
+}
+
+.button-login:hover::before {
+  opacity: 1;
 }
 
 
-.button-user-item:hover {
+.button-user-item:hover,
+.user-account a:hover {
   color: #ee3643;
 }
 
-.button-user-item:active {
-  background: #ffffff;
-  opacity: 0.3;
-  color: #000000;
+.button-user-item:active,
+.user-name:active,
+.user-account a:active {
+  color: rgb(0,0,0, 0.3);
 }
 
 .user-menu {
@@ -358,12 +357,21 @@ p {
   display: inline-block;
   padding-top: 21px;
   padding-bottom: 21px;
-  width: 134.2px;
+  padding-right: 31px;
+  padding-left: 30px;
   font-size: 17px;
   color: #FFFFFF;
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
+}
+
+.user-menu li:first-child .user-menu-item {
+    padding-left: 50px;
+}
+
+.user-menu li:last-child .user-menu-item {
+    padding-left: 32px;
 }
 
 .user-menu-item:hover {
@@ -381,7 +389,7 @@ p {
 }
 
 .our-advantages {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .advantages-row {
@@ -401,9 +409,9 @@ p {
 .advantages-item {
   position: relative;
   width: 300px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-left: 25px;
-  min-height: 122px;
+  min-height: 123px;
   margin-bottom: 20px;
 }
 
@@ -426,7 +434,7 @@ p {
   font-weight: bold;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .advantages-item .button-advantages {
@@ -457,14 +465,14 @@ p {
   background-color: #ffbf47;
   background-image: url(../img/svg/icon-1.svg);
   background-repeat: no-repeat;
-  background-position: 85% 50%;
+  background-position: 83% 53%;
 }
 
 .advantages-tool {
   background-color: #3bbce3;
   background-image: url(../img/svg/icon-2.svg);
   background-repeat: no-repeat;
-  background-position: 85% 50%;
+  background-position: 87% 54%;
 }
 
 .advantages-technics {
@@ -478,7 +486,7 @@ p {
   background-color: #8ed78f;
   background-image: url(../img/svg/icon-4.svg);
   background-repeat: no-repeat;
-  background-position: 85% 50%;
+  background-position: 80% 47%;
 }
 
 .advantages-delivery {
@@ -492,9 +500,9 @@ p {
   display: flex;
   justify-content: space-between;
   background: #f9f5f0;
-  padding-top: 26px;
+  padding-top: 28px;
   padding-right: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   padding-left: 30px;
 }
 
@@ -535,7 +543,7 @@ p {
   align-items: center;
   position: relative;
   width: 220px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
@@ -662,7 +670,10 @@ p {
   position: relative;
   margin: 10px auto;
   margin-bottom: 18px;
-  padding: 10px 40px;
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-left: 33px;
   font-size: 19px;
   color: white;
   background: #ee3643;
@@ -673,7 +684,7 @@ p {
   content: "";
   position: absolute;
   top: 0;
-  right: -22px;
+  right: -26px;
   width: 0;
   height: 0;
   border: 20px solid white;
@@ -685,7 +696,7 @@ p {
 }
 
 .manufacturers-list {
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .manufacturers-list ul {
@@ -728,11 +739,24 @@ p {
 .our-services-tabs {
   display: flex;
   justify-content: space-between;
-  margin-top: 72px;
+  padding-top: 70px;
 }
 
 .our-services-tabs .tabs-menu {
   width: 240px;
+  position: relative;
+}
+
+ul.tabs-menu::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 10px;
+  height: 279px;
+  background-image: url(../img/our-services-shadow.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .our-services-tabs .tabs-content {
@@ -794,7 +818,7 @@ p {
 .tab-content-item:nth-child(1) {
   background-image: url(../img/our-services-01-delivery.png);
   background-repeat: no-repeat;
-  background-position: 150px 0px;
+  background-position: 151px 21px;
 }
 
 .tab-content-item:nth-child(2) {
@@ -826,9 +850,9 @@ p {
   display: block;
 }
 
-#service-1:checked ~ .tabs-menu .slider-service-item--1.active,
-#service-2:checked ~ .tabs-menu .slider-service-item--2.active,
-#service-3:checked ~ .tabs-menu .slider-service-item--3.active {
+#service-1:checked ~ .tabs-menu .slider-service-item--1,
+#service-2:checked ~ .tabs-menu .slider-service-item--2,
+#service-3:checked ~ .tabs-menu .slider-service-item--3 {
   background: #ffffff;
   color: #32425C;
   box-shadow: 0 1px 0 0 #FFFFFF;
@@ -869,7 +893,7 @@ p {
 
 .company-features  {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   margin-left: 20px;
 }
 
@@ -879,14 +903,14 @@ p {
   color: #000000;
   line-height: 19px;
   margin-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .company-features li::before {
   content: '';
   position: absolute;
-  top: 9px;
-  left: -40px;
+  top: 7px;
+  left: -35px;
   width: 25px;
   height: 2px;
   background: #ee3643;
@@ -924,7 +948,7 @@ p {
 }
 
 .footer-first-row .navigation-logo {
-  height: 69px;
+  height: 68px;
 }
 
 .footer-first-row .navigation-logo img {
@@ -947,7 +971,7 @@ p {
 
 .footer-first-row .footer-menu-item {
   color: #F1F5F7;
-  padding-top: 37px;
+  padding-top: 34px;
   padding-right: 59px;
 }
 
@@ -956,10 +980,9 @@ p {
 }
 
 .footer-second-row .footer-menu-item  {
-  padding-right: 40px;
-  padding-left: 20px;
+  padding-right: 36px;
+  padding-left: 24px;
   color: #FFD180;
-
 }
 
 .footer-address {
@@ -1023,7 +1046,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 141px;
+  width: 140px;
   margin: 0 auto;
 }
 
@@ -1241,7 +1264,6 @@ p {
 }
 
 .filter-row h5 {
-  margin-left: 19px;
   font-family: PT Sans;
   font-size: 13px;
   font-weight: normal;
@@ -1353,7 +1375,7 @@ p {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 26px;
   left: 0;
   width: 6px;
   height: 6px;
@@ -1363,10 +1385,11 @@ p {
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .range-controls .toggle-min {
-  left: 20px;
+  left: 16px;
 }
 
 .range-controls .toggle-max {
@@ -1519,7 +1542,7 @@ p {
   margin-bottom: 60px;
 }
 
-.pagination-list .pagination-item  {
+.pagination-item  {
   display: inline-block;
   vertical-align: middle;
   padding: 6px 15px;
@@ -1536,8 +1559,8 @@ p {
 }
 
 .pagination-item-current {
-  background-color: #ee3643 !important;
-  color: #ffffff !important;
+  background-color: #ee3643;
+  color: #ffffff;
 }
 
 .pagination-item-next {
