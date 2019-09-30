@@ -71,7 +71,7 @@
           <section class="our-advantages">
             <h2 class="visually-hidden second-level-heading">Наши преимущества:</h2>
             <div class="advantages-row">
-              <div class="advantages-item advantages-materials sticker-new">
+              <div class="advantages-item advantages-materials sticker-new sticker-advantage">
                 <h4 class="advantages-title">Материалы</h4>
                 <a href="#" class="button-advantages">На любой вкус</a>
               </div>
@@ -86,24 +86,27 @@
             </div>
             <div class="advantages-row">
               <div class="advantages-slider">
-                <div class="advantages-slider-item">
-                  <img src="img/slider-item-02.png" width="620" height="266" alt="Слайдер дрели">
-                  <!--
-                  <h4>Дрели</h4>
-                  <p>Соседям на радость!</p>
-                  <a href="catalog.html">Открыть каталог</a>
-                  -->
-                </div>
-                <div class="advantages-slider-item" style="display: none; ">
-                  <img src="img/slider-item-01.png" width="620" height="266" alt="Слайдер перфораторы">
-                  <h4>Перфораторы</h4>
-                  <p>Настоящие мужские игрушки</p>
-                  <a href="catalog.html">Открыть каталог</a>
-                </div>
-                <!--
-                <button type="button">Назад</button>
-                <button type="button">Вперед</button>
-                -->
+
+                <input class="visually-hidden" type="radio" id="advantage-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="advantage-2" name="toggle">
+
+                <ul class="advantage-slider-controls reset-list">
+                  <label class="advantage-controls-item advantage-controls-item--1" for="advantage-1">Первый</label>
+                  <label class="advantage-controls-item advantage-controls-item--2" for="advantage-2">Второй</label>
+                </ul>
+
+                <ul class="advantage-slider-list reset-list">
+                  <li class="advantage-slider-item">
+                    <h3>Дрели</h3>
+                    <p>Соседям на радость!</p>
+                    <a class="advantage-item-button button" href="catalog.html">Открыть каталог</a>
+                  </li>
+                  <li class="advantage-slider-item">
+                    <h3>Перфораторы</h3>
+                    <p>Настоящие мужские игрушки</p>
+                    <a class="advantage-item-button button" href="catalog.html">Открыть каталог</a>
+                  </li>
+                </ul>
               </div>
               <div class="advantages-services">
                 <div class="advantages-item advantages-discounts">
@@ -136,7 +139,6 @@
                 <div class="price">25500 Р.</div>
               </li>
               <li class="product-item">
-                <div class="flag flag-new">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -148,8 +150,7 @@
                 <div class="discount">25500 Р.</div>
                 <div class="price">15500 Р.</div>
               </li>
-              <li class="product-item">
-                <div class="flag">новинка</div>
+              <li class="product-item sticker-new-product">
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -162,7 +163,6 @@
                 <div class="price">25500 Р.</div>
               </li>
               <li class="product-item">
-                <div class="flag flag-new">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
