@@ -86,6 +86,10 @@
             </div>
             <div class="advantages-row">
               <div class="advantages-slider">
+                <div class="advantage-arrows">
+                  <a href="#" class="arrow arrow-left" aria-label="Стрелка вправо"></a>
+                  <a href="#" class="arrow arrow-right" aria-label="Стрелка влево"></a>
+                </div>
                 <input class="visually-hidden" type="radio" id="advantage-1" name="advantage" checked>
                 <input class="visually-hidden" type="radio" id="advantage-2" name="advantage">
                 <div class="advantage-slider-controls">
@@ -103,10 +107,6 @@
                     <p>Настоящие мужские игрушки</p>
                     <a class="advantage-item-button button" href="catalog.html">Открыть каталог</a>
                   </li>
-                  <div class="advantage-arrows">
-                    <a href="#" class="arrow arrow-left" aria-label="Стрелка вправо"></a>
-                    <a href="#" class="arrow arrow-right" aria-label="Стрелка влево"></a>
-                  </div>
                 </ul>
               </div>
               <div class="advantages-services">
@@ -295,7 +295,7 @@
             <a href="#" class="button button-company">Подробнее о компании</a>
           </div>
           <div class="company-contacts">
-            <h2 class="second-level-heading">Контакты</h3>
+            <h2 class="second-level-heading">Контакты</h2>
             <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
             <div class="company-map">
               <img src="img/contacts-map-01.png" width="300" height="158" alt="Контакты">
@@ -398,7 +398,7 @@
         </div>
         <div class="modal-row">
           <label for="user-text">Текст письма:</label>
-          <textarea name="user-text" class="user-text" placeholder="В свободной форме"></textarea>
+          <textarea id ="user-text" name="user-text" class="user-text" placeholder="В свободной форме"></textarea>
         </div>
         <div class="modal-row">
           <button class="button button-submit" type="submit">Отправить</button>
