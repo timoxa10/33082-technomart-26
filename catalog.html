@@ -273,7 +273,7 @@
       </div>
       <div class="section-description-wrapper wrapper">
         <div class="container">
-          <aside>
+          <aside class="seo-text">
             <h2 class="second-level-heading">Пара слов о перфораторах</h2>
             <p>
               Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
@@ -366,9 +366,23 @@
     <!-- starts section our address -->
     <section style="display: none; ">
       <p>Товар добавлен в корзину!</p>
-      <a href="#">Оформить заказ</a>
-      <a href="#">Продолжить покупки</a>
+
       <button type="button" aria-label="Закрыть форму">x</button>
+    </section>
+
+    <section class="modal modal-product">
+      <div class="modal-product-container">
+        <div class="added-product-title">
+          <h2>Товар добавлен в корзину!</h2>
+        </div>
+        <div class="modal-row">
+          <a href="#" class="button-place-order button">Оформить заказ</a>
+          <a href="#" class="button-go-shopping button">Продолжить покупки</a>
+        </div>
+      </div>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <!-- ends section our address -->
 

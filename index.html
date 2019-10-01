@@ -86,15 +86,12 @@
             </div>
             <div class="advantages-row">
               <div class="advantages-slider">
-
                 <input class="visually-hidden" type="radio" id="advantage-1" name="advantage" checked>
                 <input class="visually-hidden" type="radio" id="advantage-2" name="advantage">
-
-                <ul class="advantage-slider-controls reset-list">
+                <div class="advantage-slider-controls">
                   <label class="advantage-controls-item advantage-controls-item--1" for="advantage-1">Первый</label>
                   <label class="advantage-controls-item advantage-controls-item--2" for="advantage-2">Второй</label>
-                </ul>
-
+                </div>
                 <ul class="advantage-slider-list reset-list">
                   <li class="advantage-slider-item">
                     <h3>Дрели</h3>
@@ -106,6 +103,10 @@
                     <p>Настоящие мужские игрушки</p>
                     <a class="advantage-item-button button" href="catalog.html">Открыть каталог</a>
                   </li>
+                  <div class="advantage-arrows">
+                    <a href="#" class="arrow arrow-left" aria-label="Стрелка вправо"></a>
+                    <a href="#" class="arrow arrow-right" aria-label="Стрелка влево"></a>
+                  </div>
                 </ul>
               </div>
               <div class="advantages-services">
@@ -272,7 +273,7 @@
                   Залезть в долговую яму стало проще!<br>
                    Кредитные консультанты придут вам на помощь.
                 </p>
-                <a href="#" class="button-tab button-company">Отправить заявку</a>
+                <a href="#" class="button button-tab">Отправить заявку</a>
               </li>
             </ul>
 
@@ -282,7 +283,7 @@
       <div class="container">
         <section class="company-info">
           <div class="company-about">
-            <h2 class="second-level-heading">Компания «Техномарт»</h3>
+            <h2 class="second-level-heading">Компания «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
   Техномарт работает со многими транспортными компаниями: </p>
@@ -383,32 +384,41 @@
       </div>
     </footer>
     <!-- starts form write us -->
-    <section style="display: none; ">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+    <section class="modal write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-row">
+          <div class="modal-item">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="modal-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="user-email" required placeholder="email@example.com">
+          </div>
         </div>
-        <div>
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" type="email" name="user-email" placeholder="email@example.com">
-        </div>
-        <div>
+        <div class="modal-row">
           <label for="user-text">Текст письма:</label>
-          <input id="user-text" type="text" name="user-text" placeholder="В свободной форме">
+          <textarea name="user-text" class="user-text" placeholder="В свободной форме"></textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <div class="modal-row">
+          <button class="button button-submit" type="submit">Отправить</button>
+        </div>
       </form>
-      <button type="button" aria-label="Закрыть форму">x</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <!-- ends form write us -->
 
     <!-- starts section our address -->
-    <section style="display: none; ">
-      <p>
-        <img src="img/contacts-map-02-clicable.png" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
-      <button type="button" aria-label="Закрыть форму">x</button>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="modal-map-image">
+        <img src="img/contacts-map-02-clicable.png" width="940" height="422" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </div>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <!-- ends section our address -->
 
