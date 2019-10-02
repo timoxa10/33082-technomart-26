@@ -22,7 +22,7 @@
             </form>
             <ul class="bookmarks-navigation reset-list">
               <li class="button-bookmark bookmarks-item">Закладки: 0</li>
-              <li class="button-cart button-cart-active bookmarks-item">Корзина: 10</li>
+              <li class="button-cart cart-not-empty bookmarks-item">Корзина: 10</li>
               <li>
                 <a href="#" class="button-checkout bookmarks-item">Оформить заказ</a>
               </li>
@@ -363,14 +363,8 @@
         </div>
       </div>
     </footer>
-    <!-- starts section our address -->
-    <section style="display: none; ">
-      <p>Товар добавлен в корзину!</p>
 
-      <button type="button" aria-label="Закрыть форму">x</button>
-    </section>
-
-    <section class="modal modal-product">
+    <section class="modal modal-product hidden">
       <div class="modal-product-container">
         <div class="added-product-title">
           <h2>Товар добавлен в корзину!</h2>
@@ -384,7 +378,7 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <!-- ends section our address -->
 
+  <script src="js/script.js"></script>
   </body>
 </html>

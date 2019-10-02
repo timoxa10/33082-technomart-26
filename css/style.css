@@ -228,7 +228,7 @@ p {
   opacity: 0.5;
 }
 
-.button-cart-active {
+.cart-not-empty {
   background-color: #EE3643;
 }
 
@@ -439,6 +439,31 @@ p {
   max-height: 266px;
   position: relative;
   background-color: #eeeeee;
+}
+
+.advantage-arrows {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 115px;
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  width: 32px;
+  height: 32px;
+}
+
+.arrow-left {
+  left: 30px;
+  transform: rotate(-225deg);
+}
+
+.arrow-right {
+  right: 25px;
+  transform: rotate(-45deg);
 }
 
 .advantages-services {
@@ -1724,16 +1749,20 @@ ul.tabs-menu::before {
   line-height: 32px;
 }
 
+.hidden {
+  display: none;
+}
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
+  z-index: 9999;
 }
 
 .write-us {
-  display: none;
   width: 620px;
   border-top: 7px solid #EE3643;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
@@ -1838,7 +1867,6 @@ ul.tabs-menu::before {
 }
 
 .modal-map {
-  display: none;
   width: 940px;
   height: 422px;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.75);
@@ -1849,7 +1877,6 @@ ul.tabs-menu::before {
 }
 
 .modal-product {
-  display: none;  
   border-top: 7px solid #EE3643;
   width: 620px;
   box-shadow: 0 20px 40px 0 rgba(41,52,73,0.75);
