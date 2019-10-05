@@ -28,8 +28,7 @@ if (window.location.href.indexOf('catalog') > -1) {
       modalBuy.classList.add('hidden');
     });
   }
-}
-if (window.location.href.indexOf('index') > -1) {
+} else {
   for (var i = 0; i < modalClose.length; i++) {
     modalClose[i].addEventListener('click', function(evt) {
       evt.preventDefault();
