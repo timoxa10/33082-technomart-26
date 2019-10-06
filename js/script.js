@@ -10,8 +10,8 @@ var modalBuy = document.querySelector('.modal-product');
 var arrowsList = document.querySelector('.advantage-arrows');
 var arrowRight = document.querySelector('.arrow-right');
 var arrowLeft = document.querySelector('.arrow-left');
-var radioSliderNext = document.getElementById('advantage-2');
 var radioSliderDefault = document.getElementById('advantage-1');
+var radioSliderNext = document.getElementById('advantage-2');
 var actionsList = document.querySelector('.actions');
 
 for (var i = 0; i < buttonBuy.length; i++) {
