@@ -17,15 +17,22 @@ var actionsList = document.querySelector('.actions');
 for (var i = 0; i < buttonBuy.length; i++) {
   buttonBuy[i].addEventListener('click', function(evt) {
     evt.preventDefault();
+    modalWrapper.classList.remove('hidden');
     modalBuy.classList.remove('hidden');
   });
+  window.onclick = function(evt) {
+    if (evt.target.classList.contains('modal-wrapper')) {
+      modalBuy.classList.add('hidden');
+      modalWrapper.classList.add('hidden');      
+    }
+  }
 }
-
 if (window.location.href.indexOf('catalog') > -1) {
   for (var i = 0; i < modalClose.length; i++) {
     modalClose[i].addEventListener('click', function(evt) {
       evt.preventDefault();
       modalBuy.classList.add('hidden');
+      modalWrapper.classList.add('hidden');
     });
   }
 } else {
@@ -43,6 +50,7 @@ if (window.location.href.indexOf('catalog') > -1) {
       modalWrapper.classList.add('hidden');
       writeUsform.classList.add('hidden');
       modalMap.classList.add('hidden');
+      modalBuy.classList.add('hidden');
     }
   }
   buttonWriteUs.addEventListener('click', function(evt){
@@ -55,7 +63,7 @@ if (window.location.href.indexOf('catalog') > -1) {
     modalMap.classList.remove('hidden');
     modalWrapper.classList.remove('hidden');
   });
-  arrowsList.addEventListener("click", function(evt) {
+  arrowsList.addEventListener('click', function(evt) {
     evt.preventDefault();
     if (evt.target.classList.contains('arrow-left')) {
       arrowLeft.addEventListener ('click', function(evt) {
