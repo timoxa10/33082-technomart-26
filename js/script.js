@@ -17,13 +17,13 @@ var actionsList = document.querySelector('.actions');
 for (var i = 0; i < buttonBuy.length; i++) {
   buttonBuy[i].addEventListener('click', function(evt) {
     evt.preventDefault();
-    modalWrapper.classList.remove('hidden');
     modalBuy.classList.remove('hidden');
+    modalWrapper.classList.remove('hidden');    
   });
   window.onclick = function(evt) {
     if (evt.target.classList.contains('modal-wrapper')) {
       modalBuy.classList.add('hidden');
-      modalWrapper.classList.add('hidden');      
+      modalWrapper.classList.add('hidden');
     }
   }
 }
