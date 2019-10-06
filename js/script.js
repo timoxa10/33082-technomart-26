@@ -1,5 +1,5 @@
 'use strict';
-
+var modalWrapper = document.querySelector('.modal-wrapper');
 var buttonWriteUs = document.querySelector('.button-write-us');
 var writeUsform = document.querySelector('.write-us');
 var modalClose = document.querySelectorAll('.modal-close');
@@ -35,16 +35,25 @@ if (window.location.href.indexOf('catalog') > -1) {
       writeUsform.classList.add('hidden');
       modalMap.classList.add('hidden');
       modalBuy.classList.add('hidden');
+      modalWrapper.classList.add('hidden');
     });
+  }
+  window.onclick = function(evt) {
+    if (evt.target.classList.contains('modal-wrapper')) {
+      modalWrapper.classList.add('hidden');
+      writeUsform.classList.add('hidden');
+      modalMap.classList.add('hidden');
+    }
   }
   buttonWriteUs.addEventListener('click', function(evt){
     evt.preventDefault();
     writeUsform.classList.remove('hidden');
-
+    modalWrapper.classList.remove('hidden');
   });
   imageMap.addEventListener('click', function(evt){
     evt.preventDefault();
     modalMap.classList.remove('hidden');
+    modalWrapper.classList.remove('hidden');
   });
   arrowsList.addEventListener("click", function(evt) {
     evt.preventDefault();
