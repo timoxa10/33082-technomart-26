@@ -18,7 +18,7 @@ for (var i = 0; i < buttonBuy.length; i++) {
   buttonBuy[i].addEventListener('click', function(evt) {
     evt.preventDefault();
     modalBuy.classList.remove('hidden');
-    modalWrapper.classList.remove('hidden');    
+    modalWrapper.classList.remove('hidden');
   });
   window.onclick = function(evt) {
     if (evt.target.classList.contains('modal-wrapper')) {
