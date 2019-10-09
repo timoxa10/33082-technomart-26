@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet" >
-    <link href="css/min.style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -21,8 +20,12 @@
             	<button type="submit" class="search-button visually-hidden"></button>
             </form>
             <ul class="bookmarks-navigation reset-list">
-              <li class="button-bookmark bookmarks-item">Закладки: 0</li>
-              <li class="button-cart bookmarks-item">Корзина: 0</li>
+              <li>
+                <a href="#" class="button-bookmark bookmarks-item">Закладки: 0</a>
+              </li>
+              <li>
+                <a href="#" class="button-cart bookmarks-item">Корзина: 0</a>
+              </li>
               <li>
                 <a href="#" class="button-checkout bookmarks-item">Оформить заказ</a>
               </li>
@@ -35,7 +38,7 @@
           <div class="user-navigation">
             <div class="user-coordinates">
               <div class="navigation-item">
-                <h1 class="first-level-heading">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+                <h1 class="first-level-heading">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
               </div>
               <ul class="store-phone navigation-item reset-list">
                 <li><a href="tel:+7(812)555-05-55" class="header-phone">+7 (812) 555-05-55</a></li>
@@ -87,8 +90,8 @@
             <div class="advantages-row">
               <div class="advantages-slider">
                 <div class="advantage-arrows">
-                  <a href="#" class="arrow arrow-left" aria-label="Стрелка вправо"></a>
-                  <a href="#" class="arrow arrow-right" aria-label="Стрелка влево"></a>
+                  <button class="arrow arrow-left" aria-label="Стрелка вправо"></button>
+                  <button class="arrow arrow-right" aria-label="Стрелка влево"></button>
                 </div>
                 <input class="visually-hidden" type="radio" id="advantage-1" name="advantage" checked>
                 <input class="visually-hidden" type="radio" id="advantage-2" name="advantage">
@@ -135,7 +138,7 @@
                 <div class="image centered-image">
                   <img src="img/product-bosh-bfc-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 900">
                 </div>
-                <h3 class="title">Перфоратор BOSCH<br> BFG 900</h3>
+                <h3 class="title">Перфоратор BOSCH BFG 900</h3>
                 <div class="discount">32500 Р.</div>
                 <div class="price">25500 Р.</div>
               </li>
@@ -147,7 +150,7 @@
                 <div class="image centered-image">
                   <img src="img/product-bosh-bfc-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                 </div>
-                <h3 class="title">Перфоратор BOSCH<br> BFG 3000</h3>
+                <h3 class="title">Перфоратор BOSCH BFG 3000</h3>
                 <div class="discount">25500 Р.</div>
                 <div class="price">15500 Р.</div>
               </li>
@@ -159,7 +162,7 @@
                 <div class="image centered-image">
                   <img src="img/product-bosh-bfc-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
                 </div>
-                <h3 class="title">Перфоратор BOSCH<br> BFG 6000</h3>
+                <h3 class="title">Перфоратор BOSCH BFG 6000</h3>
                 <div class="discount">30500 Р.</div>
                 <div class="price">25500 Р.</div>
               </li>
@@ -171,7 +174,7 @@
                 <div class="image centered-image">
                   <img src="img/product-bosh-bfc-2000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
                 </div>
-                <h3 class="title">Перфоратор BOSCH<br> BFG 2000</h3>
+                <h3 class="title">Перфоратор BOSCH BFG 2000</h3>
                 <div class="price">12500 Р.</div>
               </li>
             </ul>
@@ -252,6 +255,8 @@
                 <p class="tab-content-text">
                   Мы с удовольствием доставим ваш товар прямо<br>
                   к вашему подъезду совершенно бесплатно!<br>
+                </p>
+                <p class="tab-content-text">
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
@@ -260,17 +265,20 @@
                 <h3 class="tab-content-title">Гарантия</h3>
                 <p class="tab-content-text">
                   Если купленный у нас товар поломается или заискрит,<br>
-                   а также в случае пожара, спровоцированного его<br>
-                  возгоранием,  вы всегда можете быть уверены в<br>
-                  нашей гарантии. Мы обменяем сгоревший товар на<br>
-                  новый.<br>
+                   а также в случае пожара, спровоцированного его возгоранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                  сгоревший товар на новый.
+                </p>
+                <p class="tab-content-text">
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
               <li class="tab-content-item">
                 <h3 class="tab-content-title">Кредит</h3>
                 <p class="tab-content-text">
-                  Залезть в долговую яму стало проще!<br>
+                  Залезть в долговую яму стало проще!
+                </p>
+                <p class="tab-content-text">
                    Кредитные консультанты придут вам на помощь.
                 </p>
                 <a href="#" class="button button-tab">Отправить заявку</a>
@@ -284,9 +292,10 @@
         <section class="company-info">
           <div class="company-about">
             <h2 class="second-level-heading">Компания «Техномарт»</h2>
-            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-  Техномарт работает со многими транспортными компаниями: </p>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+            <p>Техномарт работает со многими транспортными компаниями: </p>
             <ul class="company-features reset-list">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
@@ -296,9 +305,11 @@
           </div>
           <div class="company-contacts">
             <h2 class="second-level-heading">Контакты</h2>
-            <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <div class="company-map">
-              <img src="img/contacts-map-01.png" width="300" height="158" alt="Контакты">
+              <a href="#">
+                <img src="img/contacts-map-01.jpg" width="300" height="158" alt="Контакты">
+              </a>
             </div>
             <a href="#" class="button button-write-us">Заблудились? Напишите нам!</a>
           </div>
@@ -340,7 +351,8 @@
         <div class="container">
           <section class="footer-social">
             <div class="footer-copyright">
-              <p>© 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
+              <p>© 2010–2019 Компания «Техномарт» </p>
+              <p>Все права защищены</p>
             </div>
             <div class="footer-social-links">
               <ul class="reset-list">
@@ -371,13 +383,10 @@
               </ul>
             </div>
             <div class="footer-feedback">
-              <p>Обратная связь:<br>
-                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-              <p>
-                Разработано — <br>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-              </p>
+              <p>Обратная связь:</p>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <p>Разработано</p>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </section>
         </div>
@@ -414,7 +423,7 @@
         width="940" height="422" style="border:0;" allowfullscreen="">
         </iframe>
         <p>
-          <img src="img/contacts-map-02-clicable.png" width="940" height="422"
+          <img src="img/contacts-map-02-clicable.jpg" width="940" height="422"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
       </div>
