@@ -34,7 +34,7 @@ if (window.location.href.indexOf('catalog') > -1) {
     modalClose[i].addEventListener('click', function(evt) {
       evt.preventDefault();
       modalBuy.classList.add('hidden');
-      modalBuy.classList.add('modal-animated');      
+      modalBuy.classList.add('modal-animated');
       modalWrapper.classList.add('hidden');
     });
   }
