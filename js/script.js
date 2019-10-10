@@ -12,18 +12,20 @@ var arrowRight = document.querySelector('.arrow-right');
 var arrowLeft = document.querySelector('.arrow-left');
 var radioSliderDefault = document.getElementById('advantage-1');
 var radioSliderNext = document.getElementById('advantage-2');
-var actionsList = document.querySelector('.actions');
 
 for (var i = 0; i < buttonBuy.length; i++) {
   buttonBuy[i].addEventListener('click', function(evt) {
     evt.preventDefault();
     modalBuy.classList.remove('hidden');
+    modalBuy.classList.add('modal-animated');
     modalWrapper.classList.remove('hidden');
+
   });
   window.onclick = function(evt) {
     if (evt.target.classList.contains('modal-wrapper')) {
       modalBuy.classList.add('hidden');
       modalWrapper.classList.add('hidden');
+      modalBuy.classList.remove('modal-animated');
     }
   }
 }
@@ -32,6 +34,7 @@ if (window.location.href.indexOf('catalog') > -1) {
     modalClose[i].addEventListener('click', function(evt) {
       evt.preventDefault();
       modalBuy.classList.add('hidden');
+      modalBuy.classList.add('modal-animated');      
       modalWrapper.classList.add('hidden');
     });
   }
@@ -43,6 +46,9 @@ if (window.location.href.indexOf('catalog') > -1) {
       modalMap.classList.add('hidden');
       modalBuy.classList.add('hidden');
       modalWrapper.classList.add('hidden');
+      writeUsform.classList.remove('modal-animated');
+      modalMap.classList.remove('modal-animated');
+      modalBuy.classList.remove('modal-animated');
     });
   }
   window.onclick = function(evt) {
@@ -51,10 +57,14 @@ if (window.location.href.indexOf('catalog') > -1) {
       writeUsform.classList.add('hidden');
       modalMap.classList.add('hidden');
       modalBuy.classList.add('hidden');
+      writeUsform.classList.remove('modal-animated');
+      modalMap.classList.remove('modal-animated');
+      modalBuy.classList.remove('modal-animated');
     }
   }
   buttonWriteUs.addEventListener('click', function(evt){
     evt.preventDefault();
+    writeUsform.classList.add('modal-animated');
     writeUsform.classList.remove('hidden');
     modalWrapper.classList.remove('hidden');
   });
@@ -62,6 +72,8 @@ if (window.location.href.indexOf('catalog') > -1) {
     evt.preventDefault();
     modalMap.classList.remove('hidden');
     modalWrapper.classList.remove('hidden');
+    writeUsform.classList.add('modal-animated');
+    modalMap.classList.add('modal-animated');
   });
   arrowsList.addEventListener('click', function(evt) {
     evt.preventDefault();

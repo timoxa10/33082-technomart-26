@@ -725,11 +725,12 @@ li:last-child .user-menu-item {
   background-image: url(../img/logo-new-product.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 15;
 }
 
 .product-item .actions {
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 218px;
   height: 88px;
@@ -743,8 +744,9 @@ li:last-child .user-menu-item {
 
 .actions .buy,
 .actions .bookmark {
+  position: relative;
   display: block;
-  width: 129px;
+  width: 136px;
   margin: 0 auto;
   margin-bottom: 7px;
   padding-top: 7px;
@@ -760,6 +762,24 @@ li:last-child .user-menu-item {
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.actions .buy::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 17px;
+  height: 17px;
+  background-image: url(../img/svg/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.buy:hover::before,
+.buy:active::before {
+  opacity: 1;
 }
 
 .actions .buy:hover {
@@ -835,7 +855,7 @@ li:last-child .user-menu-item {
   line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
-  margin-top: 12px;
+  margin-top: 13px;
   margin-bottom: 0px;
 }
 
@@ -848,7 +868,7 @@ li:last-child .user-menu-item {
   background: #ee3643;
   border-radius: 3px;
   margin-top: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   padding-top: 10px;
   padding-right: 35px;
   padding-bottom: 12px;
@@ -867,7 +887,7 @@ li:last-child .user-menu-item {
 }
 
 .product-item .title + .price {
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .manufacturers-list {
@@ -1437,7 +1457,7 @@ li:last-child .footer-menu-item {
 .catalog-title-wrapper {
   background-color: #f2f6f8;
   padding-top: 30px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
   padding-left: 30px;
 }
 
@@ -1448,7 +1468,7 @@ li:last-child .footer-menu-item {
 
 .filter-navigation {
   margin-top: 20px;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 
 .filter-row {
@@ -1492,6 +1512,10 @@ li:last-child .footer-menu-item {
   margin: 0;
   padding: 0;
   margin-right: auto;
+}
+
+.filter-left-column h5 {
+  margin-top: 3px;
 }
 
 .filter-row .sort-item {
@@ -1547,17 +1571,23 @@ li:last-child .footer-menu-item {
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 
-.filter-form legend {
-  padding-top: 25px;
-  padding-bottom: 20px;
+.filter-item legend {
+  padding-top: 16px;
+  padding-bottom: 14px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.filter-item .legend-price-title {
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
 }
 
 .filter-item:nth-child(2) {
@@ -1576,8 +1606,9 @@ li:last-child .footer-menu-item {
 .range-controls {
   position: relative;
   height: 80px;
+  margin-top: 22px;
   margin-bottom: 8px;
-  padding-top: 38px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -1679,7 +1710,7 @@ li:last-child .footer-menu-item {
   content: '';
   position: absolute;
   left: -36px;
-  top: 0;
+  top: -2px;
   width: 23px;
   height: 23px;
   background-image: url(../img/svg/checkbox-off.svg);
@@ -1691,7 +1722,7 @@ li:last-child .footer-menu-item {
 .filter-input-checkbox:checked + label::after {
   content: '';
   position: absolute;
-  top: 0px;
+  top: -2px;
   left: -36px;
   width: 27px;
   height: 23px;
@@ -1766,8 +1797,8 @@ li:last-child .footer-menu-item {
 .pagination-item {
   display: inline-block;
   vertical-align: middle;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: 9px;
@@ -1854,6 +1885,9 @@ li:last-child .pagination-item {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   z-index: 888;
+}
+
+.modal-animated {
   animation: bounce 0.6s;
 }
 
@@ -1949,7 +1983,7 @@ li:last-child .pagination-item {
 }
 
 .write-us-form .modal-row:nth-child(2) {
-  padding-bottom: 35px;
+  padding-bottom: 28px;
 }
 
 .write-us-form .modal-row:last-child {
@@ -1995,13 +2029,14 @@ li:last-child .pagination-item {
 .modal-product-container .added-product-title {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
   padding-left: 80px;
   padding-right: 80px;
 }
 
 .added-product-title h2 {
   margin-left: 55px;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -2011,7 +2046,7 @@ li:last-child .pagination-item {
 .added-product-title h2::before {
   content: '';
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 80px;
   width: 66px;
   height: 66px;
@@ -2024,8 +2059,8 @@ li:last-child .pagination-item {
   display: flex;
   justify-content: space-between;
   background-color: #f1f1f1;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding-top: 37px;
+  padding-bottom: 37px;
   padding-left: 80px;
   padding-right: 80px;
 }
