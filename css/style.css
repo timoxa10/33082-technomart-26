@@ -354,13 +354,15 @@ a {
 
 .button-login:hover::before,
 .user-name:hover::before,
-.user-name:hover::after {
+.user-name:hover::after,
+.user-logout:hover {
   opacity: 1;
 }
 
 .button-login:active::before,
 .user-name:active::before,
-.user-name:active::after {
+.user-name:active::after,
+.user-logout:active {
   opacity: 0.3;
 }
 
@@ -1299,19 +1301,25 @@ li:last-child .footer-menu-item {
   color: #ee3643;
 }
 
+.user-data {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .user-name {
   font-family: 'Cuprum', 'Arial', sans-serif;
   display: inline-block;
   vertical-align: middle;
-  width: 100%;
-  text-align: center;
+  width: 240px;
   padding-top: 12px;
+  padding-right: 18px;
   padding-bottom: 12px;
-  padding-right: 20px;
+  text-align: right;
   font-size: 21px;
   color: #000000;
   line-height: 21px;
-  background-color: #ffffff;
 }
 
 .user-name::before {
@@ -1327,23 +1335,21 @@ li:last-child .footer-menu-item {
   opacity: 0.3;
 }
 
-.user-name::after {
-  content: '';
-  position: absolute;
-  top: 14px;
-  right: 11px;
+.user-logout {
+  display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 17px;
   background-image: url(../img/svg/icon-logout-blue.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0px 0;
   opacity: 0.3;
 }
 
 .user-account {
   position: absolute;
   font-size: 0;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 
 .user-account a {
@@ -1430,8 +1436,8 @@ li:last-child .footer-menu-item {
 
 .catalog-title-wrapper {
   background-color: #f2f6f8;
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 31px;
   padding-left: 30px;
 }
 
@@ -1552,10 +1558,6 @@ li:last-child .footer-menu-item {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.filter-item:first-child legend {
-  padding-top: 0;
 }
 
 .filter-item:nth-child(2) {
