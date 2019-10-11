@@ -1091,6 +1091,7 @@ ul.tabs-menu::before {
 
 .company-contacts h2 + p {
   margin: 0;
+  max-width: 190px;
 }
 
 .button-write-us,
