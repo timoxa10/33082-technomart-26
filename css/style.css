@@ -1458,6 +1458,11 @@ li:last-child .footer-menu-item {
   margin-left: 5px;
 }
 
+.breadcrumbs-current:hover,
+.breadcrumbs-current:focus {
+  text-decoration: none;
+}
+
 .breadcrumbs-current::after {
   display: none;
 }
