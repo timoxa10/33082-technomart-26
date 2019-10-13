@@ -140,7 +140,11 @@ a {
   background-position: 16px 12px;
 }
 
-.search-form .input-search::placeholder {
+.input-search:-ms-input-placeholder {
+  color: #ffffff !important;;
+}
+
+.input-search::placeholder {
   color: #ffffff;
 }
 
