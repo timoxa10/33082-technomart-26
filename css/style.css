@@ -94,7 +94,6 @@ a {
 .top-navigation {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navigation-logo {
