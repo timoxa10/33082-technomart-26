@@ -101,6 +101,9 @@ a {
   position: relative;
   width: 220px;
   background: #EE3643;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-navigation .navigation-logo {
@@ -133,6 +136,7 @@ a {
 
 .search-form .input-search {
   width: 100%;
+  height: 42px;
   border: none;
   background: #293449;
   padding-top: 12px;
@@ -1187,7 +1191,7 @@ ul.tabs-menu::before {
 }
 
 .footer-first-row .navigation-logo {
-  height: 68px;
+  min-height: 68px;
 }
 
 .footer-menu {
