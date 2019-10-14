@@ -162,12 +162,12 @@ a {
   color: #ffffff;
 }
 
-.search-form .input-search:hover {
+.input-search:hover {
   background-color: #212a3a;
 }
 
-.search-form .input-search:focus,
-.search-form .input-search:active {
+.input-search:focus,
+.input-search:active {
   background-color: #ffffff;
   background-image: url(../img/svg/icon-search-red.svg);
   background-repeat: no-repeat;
