@@ -1848,7 +1848,8 @@ li:last-child .footer-menu-item {
 
 .pagination-item-current {
   background-color: #ee3643;
-  color: #ffffff;
+  border: 1px solid #ee3643;
+  color: #fff;
 }
 
 .pagination-item-next {
@@ -1862,6 +1863,10 @@ li:last-child .footer-menu-item {
 }
 
 .pagination-item:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current:hover {
   border: 1px solid #ee3643;
 }
 
