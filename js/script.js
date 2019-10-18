@@ -53,6 +53,9 @@ if (window.location.href.indexOf('catalog') > -1) {
     });
   }
   feedbackForm.addEventListener('submit', function (evt) {
+    var nameInput = writeUsform.querySelector('.input-name');
+    var emailInput = writeUsform.querySelector('.input-email');
+    var textInput = writeUsform.querySelector('.user-text');
     if (!nameInput.value || !emailInput.value || !textInput.value) {
       evt.preventDefault();
       writeUsform.classList.add('modal-error');
