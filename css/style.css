@@ -1216,7 +1216,7 @@ ul.tabs-menu::before {
 .footer-first-row .footer-menu-item {
   color: #F1F5F7;
   padding-top: 35px;
-  padding-right: 58px;
+  padding-right: 59px;
 }
 
 .footer-menu-list:last-child a {
@@ -1225,13 +1225,14 @@ ul.tabs-menu::before {
 
 .footer-second-row .footer-menu-item  {
   padding-top: 5px;
-  padding-right: 36px;
-  padding-left: 23px;
+  padding-right: 35px;
+  padding-left: 24px;
   color: #FFD180;
 }
 
 .footer-address {
   width: 380px;
+  margin-left: 5px;
 }
 
 .footer-phone,
