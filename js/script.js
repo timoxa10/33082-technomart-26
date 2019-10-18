@@ -2,6 +2,10 @@
 var modalWrapper = document.querySelector('.modal-wrapper');
 var buttonWriteUs = document.querySelector('.button-write-us');
 var writeUsform = document.querySelector('.write-us');
+var inputContacts = writeUsform.querySelectorAll('.input-contacts');
+var nameInput = writeUsform.querySelector('.input-name');
+var emailInput = writeUsform.querySelector('.input-email');
+var textInput = writeUsform.querySelector('.user-text');
 var modalClose = document.querySelectorAll('.modal-close');
 var imageMap = document.querySelector('.company-map');
 var modalMap = document.querySelector('.modal-map');
@@ -12,6 +16,7 @@ var arrowRight = document.querySelector('.arrow-right');
 var arrowLeft = document.querySelector('.arrow-left');
 var radioSliderDefault = document.getElementById('advantage-1');
 var radioSliderNext = document.getElementById('advantage-2');
+var feedbackForm = document.querySelector('.write-us-form');
 
 for (var i = 0; i < buttonBuy.length; i++) {
   buttonBuy[i].addEventListener('click', function(evt) {
@@ -46,25 +51,32 @@ if (window.location.href.indexOf('catalog') > -1) {
       modalMap.classList.add('hidden');
       modalBuy.classList.add('hidden');
       modalWrapper.classList.add('hidden');
-      writeUsform.classList.remove('modal-animated');
+      writeUsform.classList.remove('modal-animated-contacts');
       modalMap.classList.remove('modal-animated');
-      modalBuy.classList.remove('modal-animated');
+      writeUsform.classList.remove('modal-error');
     });
   }
+  feedbackForm.addEventListener('submit', function (evt) {
+    if (!nameInput.value || !emailInput.value || !textInput.value) {
+      evt.preventDefault();
+      writeUsform.classList.add('modal-error');
+      writeUsform.classList.remove('modal-animated-contacts');
+    }
+  });
   window.onclick = function(evt) {
     if (evt.target.classList.contains('modal-wrapper')) {
       modalWrapper.classList.add('hidden');
       writeUsform.classList.add('hidden');
       modalMap.classList.add('hidden');
       modalBuy.classList.add('hidden');
-      writeUsform.classList.remove('modal-animated');
+      writeUsform.classList.remove('modal-animated-contacts');
       modalMap.classList.remove('modal-animated');
-      modalBuy.classList.remove('modal-animated');
+      writeUsform.classList.remove('modal-error');
     }
   }
   buttonWriteUs.addEventListener('click', function(evt){
     evt.preventDefault();
-    writeUsform.classList.add('modal-animated');
+    writeUsform.classList.add('modal-animated-contacts');
     writeUsform.classList.remove('hidden');
     modalWrapper.classList.remove('hidden');
   });
@@ -72,7 +84,7 @@ if (window.location.href.indexOf('catalog') > -1) {
     evt.preventDefault();
     modalMap.classList.remove('hidden');
     modalWrapper.classList.remove('hidden');
-    writeUsform.classList.add('modal-animated');
+    writeUsform.classList.add('modal-animated-contacts');
     modalMap.classList.add('modal-animated');
   });
   arrowsList.addEventListener('click', function(evt) {
